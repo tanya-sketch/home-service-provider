@@ -55,7 +55,7 @@ try {
     console.log(process.env.NODE_ENV);
     db.on('error', console.error.bind(console, 'connection error:'));
     db.once('open', () => {
-      console.log('database connect....');
+      console.log('database connected....');
     });
   } else {
     console.log('Please Provide Valid DB STRING');
