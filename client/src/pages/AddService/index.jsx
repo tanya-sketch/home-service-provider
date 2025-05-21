@@ -68,9 +68,9 @@ export default function AddServices() {
       tag,
       zipcode,
     } = field;
-    const cityObj = cityOption.filter((c) => c.id === city)[0];
+    const cityObj = cityOption.find((c) => c.city === field.city);
     const categoryObj = categoryOption.filter((c) => c.id === type)[0];
-    const stateObj = stateOption.filter((c) => c.id === state)[0];
+    const stateObj = stateOption.find((c) => c.state === field.state);
 
     const data = {
       name,
@@ -295,7 +295,7 @@ export default function AddServices() {
                   >
                     {field.country &&
                       stateOption.map((c) => (
-                        <Option key={c.id}>{c.state}</Option>
+                        <Option key={c.id} value={c.state}>{c.state}</Option> //  use name
                       ))}
                   </Select>
                 </div>
@@ -316,7 +316,9 @@ export default function AddServices() {
                     {field.state &&
                       cityOption
                         .filter((c) => c.state === field.state)
-                        .map((c) => <Option key={c.id}>{c.city}</Option>)}
+                        .map((c) => (
+                          <Option key={c.id} value={c.city}>{c.city}</Option> // use city name
+                        ))}
                   </Select>
                 </div>
               </Col>
