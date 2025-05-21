@@ -1,6 +1,7 @@
 
 ## Project Overview
-The **Home Service Provider** project refers to the facilities-based carrier or reseller with whom the customer contracts for the provision of mobile telecommunications services. Users can create an account and log in. They can use our app's chart visualisation to find the best services near them or around the world, as well as different types of categories. 
+The **Home Service Provider**  is a Web Based Application which enables the Registered Users to Get the Details of various Services like Electrical , Electronics ,Civil Works,Carpentry Works,Sanitary Works and other services. Users can create an account and log in. 
+Additional: They can use our app's chart visualisation to find the best services near them or around the world, as well as different types of categories. 
 
 
 
@@ -48,6 +49,13 @@ Our technology stack is carefully chosen to optimize performance, scalability, a
 
 - #### Start Frontend
     Use `npm run start:client` or `yarn run start:client` to start the frontend.
+
+    [OR]
+
+    cd client 
+    npm install 
+    npm start
+
     Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 - #### Start Backend
