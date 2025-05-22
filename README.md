@@ -53,9 +53,9 @@ Our technology stack is carefully chosen to optimize performance, scalability, a
 
     [OR]
 
-    cd client 
-    npm install 
-    npm start
+    - cd client 
+    - npm install 
+    - npm start
 
     Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
